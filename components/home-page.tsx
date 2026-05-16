@@ -33,7 +33,7 @@ function Hero() {
       {/* Dark vignette */}
       <div className="absolute inset-0 bg-gradient-to-b from-foreground/50 via-foreground/40 to-foreground/70 z-[1]" />
 
-      <div className="relative z-[2] mx-auto max-w-4xl px-6 text-center">
+      <div className="relative z-[2] mx-auto max-w-4xl px-6 pt-20 text-center">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
