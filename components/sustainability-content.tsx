@@ -43,8 +43,7 @@ function SustainHero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-6 text-lg text-primary-foreground/80 leading-relaxed text-pretty"
         >
-          From field to fabric to finish, every decision is made with our planet
-          in mind. Luxury that leaves a lighter footprint.
+          We are building a responsible textile future.
         </motion.p>
       </div>
     </section>
@@ -79,15 +78,15 @@ function CircularProgramme() {
             </h2>
             <div className="mt-3 h-0.5 w-16 bg-accent" />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Our Circular Textile Programme is at the heart of everything we
-              do. Rather than allowing used textiles to end up in landfill, we
-              collect, inspect, clean, repair, and recirculate them — extending
-              the life of every product and reducing waste at every stage.
+              Through our return &amp; recycle initiative, clients can return
+              used linens, track environmental impact, participate in seasonal
+              refresh cycles, and reduce landfill waste.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
               Textiles that can no longer be used in their original form are
               broken down and repurposed into new products, insulation, or
-              industrial cleaning materials — ensuring nothing goes to waste.
+              industrial cleaning materials &mdash; ensuring nothing goes to
+              waste.
             </p>
           </AnimatedSection>
         </div>
@@ -185,17 +184,16 @@ function SmartLinen() {
             <div className="mt-3 h-0.5 w-16 bg-accent" />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               For hotels, healthcare facilities, and hospitality providers, our
-              smart linen management programme provides a sustainable alternative
-              to traditional textile procurement. Replace the buy-use-dispose
-              cycle with a managed subscription that tracks usage, optimises
-              inventory, and reduces environmental impact.
+              smart linen management system provides usage tracking, automated
+              restock reminders, inventory forecasting, and subscription
+              optimisation.
             </p>
             <ul className="mt-6 flex flex-col gap-3">
               {[
-                "Inventory tracking and usage analytics",
-                "Automated replenishment scheduling",
-                "Carbon footprint reporting per cycle",
-                "Dedicated account management",
+                "Usage tracking",
+                "Automated restock reminders",
+                "Inventory forecasting",
+                "Subscription optimisation",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
                   <Leaf className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />

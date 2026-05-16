@@ -1,10 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { AnimatedSection, StaggerContainer, staggerItem } from "@/components/animated-section";
+import {
+  AnimatedSection,
+  StaggerContainer,
+  staggerItem,
+} from "@/components/animated-section";
 import { SectionHeading } from "@/components/section-heading";
 import { motion } from "framer-motion";
-import { Leaf, Recycle, Heart, ShieldCheck } from "lucide-react";
+import { Leaf, Recycle, Heart, ShieldCheck, Check } from "lucide-react";
 
 /* ──────────────────────────── Hero ──────────────────────────── */
 
@@ -42,17 +46,18 @@ function AboutHero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-6 text-lg text-primary-foreground/80 leading-relaxed text-pretty"
         >
-          Born from a belief that beauty and responsibility can coexist,
-          Lush n&apos; Luxe reimagines what luxury homeware means for people and the planet.
+          Lush n&apos; Luxe was founded with a vision to bring refined,
+          sustainable textiles to homes and businesses that value quality and
+          responsibility.
         </motion.p>
       </div>
     </section>
   );
 }
 
-/* ──────────────────── Founders Story ──────────────────── */
+/* ──────────────────── Our Story ──────────────────── */
 
-function FoundersStory() {
+function OurStory() {
   return (
     <section className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -61,7 +66,7 @@ function FoundersStory() {
             <div className="overflow-hidden rounded-lg">
               <Image
                 src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80"
-                alt="Founders workspace"
+                alt="Lush n' Luxe workspace"
                 width={900}
                 height={700}
                 className="h-[480px] w-full object-cover"
@@ -69,27 +74,27 @@ function FoundersStory() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection direction="right" delay={0.15} className="lg:w-1/2">
+          <AnimatedSection
+            direction="right"
+            delay={0.15}
+            className="lg:w-1/2"
+          >
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">
-              Our Beginning
+              Who We Are
             </p>
             <h2 className="mt-4 font-serif text-3xl font-bold text-foreground md:text-4xl text-balance">
-              A Vision Woven with Purpose
+              Quality, Responsibility &amp; Partnership
             </h2>
             <div className="mt-3 h-0.5 w-16 bg-accent" />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Lush n&apos; Luxe was founded in the rolling hills of Northern Ireland
-              with a singular vision: to prove that luxury and sustainability
-              are not opposing forces, but natural partners. Our founders saw an
-              industry rife with waste and overproduction, and chose a different
-              path.
+              We serve homeowners seeking elevated comfort, and institutions
+              requiring dependable textile solutions &mdash; from boutique
+              hotels and Airbnb to hospitals and nursing homes.
             </p>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              From sourcing the finest organic fibres to partnering with ethical
-              manufacturers, every decision reflects our belief that comfort
-              should never compromise conscience. Today, we serve discerning
-              homeowners, boutique hotels, and forward-thinking businesses across
-              the UK and Ireland.
+              Our focus is not only on supplying textiles but on building
+              long-term partnerships through innovation, service reliability,
+              and environmental stewardship.
             </p>
           </AnimatedSection>
         </div>
@@ -105,7 +110,7 @@ function MissionVision() {
     <section className="bg-card py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <AnimatedSection>
-          <SectionHeading title="Mission & Vision" />
+          <SectionHeading title="Mission &amp; Vision" />
         </AnimatedSection>
 
         <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -115,13 +120,12 @@ function MissionVision() {
                 Our Mission
               </p>
               <h3 className="mt-4 font-serif text-2xl font-bold text-foreground">
-                Luxury Made Responsible
+                Comfort with Conscience
               </h3>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                To deliver premium homeware and textiles that elevate everyday
-                living while championing sustainable practices, ethical sourcing,
-                and circular economy principles at every stage of our supply
-                chain.
+                To provide sustainable, premium home textiles that enhance
+                comfort, elevate environments, and reduce environmental impact
+                through responsible sourcing and circular textile practices.
               </p>
             </div>
           </AnimatedSection>
@@ -132,14 +136,77 @@ function MissionVision() {
                 Our Vision
               </p>
               <h3 className="mt-4 font-serif text-2xl font-bold text-foreground">
-                A Greener Standard
+                Trusted Sustainable Luxury
               </h3>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                To become the benchmark for sustainable luxury in homeware — a
-                brand that proves premium quality, environmental stewardship,
-                and accessible pricing can exist in perfect harmony.
+                To become a trusted supplier of sustainable luxury textiles
+                across residential and commercial markets.
               </p>
             </div>
+          </AnimatedSection>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ──────────────────── Sustainability Commitment ──────────────────── */
+
+const commitments = [
+  "Ethical sourcing",
+  "Durable, long-life fabrics",
+  "Textile recycling programs",
+  "Subscription replacement systems that reduce waste",
+  "Responsible packaging",
+];
+
+function SustainabilityCommitment() {
+  return (
+    <section className="py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="flex flex-col items-center gap-12 lg:flex-row-reverse lg:gap-16">
+          <AnimatedSection direction="right" className="lg:w-1/2">
+            <div className="overflow-hidden rounded-lg">
+              <Image
+                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=900&q=80"
+                alt="Sustainable landscape"
+                width={900}
+                height={700}
+                className="h-[480px] w-full object-cover"
+              />
+            </div>
+          </AnimatedSection>
+
+          <AnimatedSection
+            direction="left"
+            delay={0.15}
+            className="lg:w-1/2"
+          >
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">
+              Our Pledge
+            </p>
+            <h2 className="mt-4 font-serif text-3xl font-bold text-foreground md:text-4xl text-balance">
+              Sustainability Commitment
+            </h2>
+            <div className="mt-3 h-0.5 w-16 bg-accent" />
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              We are committed to building a circular linen economy. Every
+              decision we make moves us closer to a textile industry that
+              respects people and planet alike.
+            </p>
+            <ul className="mt-6 flex flex-col gap-3">
+              {commitments.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-3 text-sm text-muted-foreground"
+                >
+                  <span className="flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-primary">
+                    <Check className="h-3 w-3 text-primary-foreground" />
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </AnimatedSection>
         </div>
       </div>
@@ -152,7 +219,7 @@ function MissionVision() {
 const values = [
   {
     icon: Leaf,
-    title: "Sustainable Sourcing",
+    title: "Ethical Sourcing",
     description:
       "Every fibre is traceable, every supplier is vetted, and every material meets our rigorous environmental standards.",
   },
@@ -164,21 +231,21 @@ const values = [
   },
   {
     icon: Heart,
-    title: "Ethical Craftsmanship",
+    title: "Durable Quality",
     description:
-      "Fair wages, safe conditions, and genuine partnerships with every artisan and manufacturer in our supply chain.",
+      "Long-life fabrics designed for longevity and comfort, reducing the need for frequent replacement.",
   },
   {
     icon: ShieldCheck,
-    title: "Uncompromising Quality",
+    title: "Responsible Packaging",
     description:
-      "We test every product to the highest standards so our customers enjoy longevity, comfort, and timeless design.",
+      "We use eco-friendly packaging throughout our supply chain, minimising waste at every stage.",
   },
 ];
 
 function BrandValues() {
   return (
-    <section className="py-24 lg:py-32">
+    <section className="bg-card py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <AnimatedSection>
           <SectionHeading
@@ -192,7 +259,7 @@ function BrandValues() {
             <motion.div
               key={val.title}
               variants={staggerItem}
-              className="group rounded-lg border border-border bg-card p-8 text-center transition-shadow hover:shadow-md"
+              className="group rounded-lg border border-border bg-background p-8 text-center transition-shadow hover:shadow-md"
             >
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
                 <val.icon className="h-6 w-6 text-primary" />
@@ -217,8 +284,9 @@ export default function AboutContent() {
   return (
     <>
       <AboutHero />
-      <FoundersStory />
+      <OurStory />
       <MissionVision />
+      <SustainabilityCommitment />
       <BrandValues />
     </>
   );

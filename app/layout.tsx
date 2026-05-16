@@ -16,9 +16,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Lush n' Luxe | Luxury Homeware & Textiles",
+  title: "Lush n' Luxe | Sustainable Homeware & Textiles Solutions",
   description:
-    "Elevating homes where elegance meets sustainability. Luxury homeware and textiles crafted for every lifestyle, delivered sustainably and affordably.",
+    "Elevating homes where elegance meets sustainability. Luxury homeware and textiles, crafted for every lifestyle — delivered sustainably and affordably.",
   keywords: [
     "luxury homeware",
     "sustainable textiles",
@@ -37,6 +37,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${playfairDisplay.variable} ${dmSans.variable} bg-background`}
+      data-scroll-behavior="smooth"
     >
       <body className="font-sans antialiased">
         {children}

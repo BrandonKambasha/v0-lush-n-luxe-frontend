@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { AnimatedSection, StaggerContainer, staggerItem } from "@/components/animated-section";
 import { SectionHeading } from "@/components/section-heading";
 import { SUBSCRIPTION_STEPS, SUBSCRIPTION_BENEFITS } from "@/lib/constants";
-import { Home, Building2, Bed, Users, DollarSign, Sparkles, Leaf, Settings } from "lucide-react";
+import { Home, Building2, Bed, Users, DollarSign, Sparkles, Leaf, Settings, Briefcase } from "lucide-react";
 
 /* ──────────────────────────── Hero ──────────────────────────── */
 
@@ -44,8 +44,9 @@ function SubHero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-6 text-lg text-primary-foreground/80 leading-relaxed text-pretty"
         >
-          Subscribe, receive, return, and refresh — a circular textile
-          programme that saves money, time, and the environment.
+          A smarter way to manage textiles. Subscribe, receive, return, and
+          refresh &mdash; a circular textile programme that saves money, time,
+          and the environment.
         </motion.p>
       </div>
     </section>
@@ -99,10 +100,11 @@ function HowItWorks() {
 /* ──────────────────── Ideal For ──────────────────── */
 
 const idealFor = [
-  { icon: Home, label: "Homeowners" },
-  { icon: Building2, label: "Hotels & B&Bs" },
   { icon: Bed, label: "Airbnb Hosts" },
-  { icon: Users, label: "Care Homes" },
+  { icon: Building2, label: "Small Hotels" },
+  { icon: Users, label: "Nursing Homes" },
+  { icon: Home, label: "Spa Facilities" },
+  { icon: Briefcase, label: "Corporate Housing" },
 ];
 
 function IdealFor() {
@@ -116,7 +118,7 @@ function IdealFor() {
           />
         </AnimatedSection>
 
-        <StaggerContainer className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-4">
+        <StaggerContainer className="mt-16 grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-5">
           {idealFor.map((item) => (
             <motion.div
               key={item.label}

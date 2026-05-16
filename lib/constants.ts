@@ -2,10 +2,10 @@
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/#collections" },
+  { label: "About", href: "/about" },
   { label: "B2B", href: "/b2b" },
   { label: "Subscription", href: "/subscription" },
   { label: "Sustainability", href: "/sustainability" },
-  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
@@ -13,75 +13,98 @@ export const NAV_LINKS = [
 export const FEATURED_COLLECTIONS = [
   {
     title: "Home & Bedroom",
-    description: "Indulge in sumptuous bedding sets, throws, and cushions crafted for restful elegance.",
-    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80",
+    description:
+      "Luxury bed with crisp linens and throw cushions. Indulge in breathable, durable bedding crafted for both elegance and performance.",
+    image:
+      "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80",
     href: "/#",
+    cta: "Shop Bedroom",
   },
   {
     title: "Bathroom & Spa",
-    description: "Plush towels, robes, and spa-grade linens that transform your daily ritual.",
-    image: "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
+    description:
+      "Stack of plush towels with bathrobe on side. Ultra-absorbent, quick-dry, and designed to withstand repeated commercial laundering.",
+    image:
+      "https://images.unsplash.com/photo-1620626011761-996317b8d101?w=800&q=80",
     href: "/#",
+    cta: "Shop Bathroom",
   },
   {
     title: "Lifestyle & Leisure",
-    description: "From picnic blankets to yoga mats, sustainable comfort for every occasion.",
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
+    description:
+      "Loungewear and tote bags for the beach. Sustainable comfort for every occasion and every lifestyle.",
+    image:
+      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
     href: "/#",
+    cta: "Shop Lifestyle",
   },
   {
     title: "Kitchenware",
-    description: "Artisan tea towels, aprons, and table linens for the discerning home chef.",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
+    description:
+      "Elegant kitchen towels, aprons, and table linen on the counter. Artisan textiles for the discerning home chef.",
+    image:
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
     href: "/#",
+    cta: "Shop Kitchenware",
   },
   {
     title: "Decor & Accessories",
-    description: "Curated accents, candles, and finishing touches to elevate every room.",
-    image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    description:
+      "Wall hangings, decorative cushions, and curtains in the living space. Curated accents to elevate every room.",
+    image:
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
     href: "/#",
+    cta: "Shop Decor",
   },
 ] as const;
 
 // Carousel collections
 export const CAROUSEL_COLLECTIONS = [
   {
-    title: "Signature Bedding",
-    description: "Our flagship 400-thread-count organic cotton collection, designed for the ultimate sleep sanctuary.",
-    image: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
+    title: "Signature Bedding Collection",
+    description:
+      "Our flagship organic cotton collection, designed for the ultimate sleep sanctuary.",
+    image:
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80",
   },
   {
-    title: "Luxury Towels & Spa",
-    description: "Zero-twist Egyptian cotton towels with unmatched absorbency and cloud-like softness.",
-    image: "https://images.unsplash.com/photo-1600369671738-fa6e2a392bf4?w=800&q=80",
+    title: "Luxury Towels & Spa Range",
+    description:
+      "Zero-twist Egyptian cotton towels with unmatched absorbency and cloud-like softness.",
+    image:
+      "https://images.unsplash.com/photo-1600369671738-fa6e2a392bf4?w=800&q=80",
   },
   {
     title: "Hospitality Essentials",
-    description: "Durable, premium-grade linens trusted by boutique hotels and Airbnb Superhosts.",
-    image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
+    description:
+      "Professional-grade linens tailored for commercial durability while maintaining a luxurious aesthetic.",
+    image:
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80",
   },
   {
-    title: "Seasonal Themes",
-    description: "Refresh your space with curated seasonal palettes and limited-edition textile designs.",
-    image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=800&q=80",
+    title: "Seasonal & Event Linen Themes",
+    description:
+      "Refresh your space with curated seasonal palettes and limited-edition textile designs.",
+    image:
+      "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=800&q=80",
   },
 ] as const;
 
-// About page promises
+// About page promises (from PDF "Our Promise")
 export const BRAND_PROMISES = [
-  "100% sustainably sourced materials",
-  "Ethically manufactured textiles",
-  "Circular textile recycling programme",
-  "Carbon-neutral delivery options",
-  "Luxury quality at accessible prices",
+  "Sustainable & responsibly sourced textiles",
+  "Designed for longevity & comfort",
+  "Flexible B2B supply solutions",
+  "Linen recycling & replacement programs",
+  "Subscription-based supply options",
 ] as const;
 
 // B2B partner types
 export const B2B_PARTNERS = [
-  { title: "Hotels & Resorts", icon: "Building2" },
-  { title: "Airbnb & Short-Let", icon: "Home" },
-  { title: "Hospitals & Healthcare", icon: "Heart" },
-  { title: "Nursing & Care Homes", icon: "Users" },
+  { title: "Hotels & Boutique Stays", icon: "Building2" },
+  { title: "Airbnb Hosts", icon: "Home" },
+  { title: "Hospitals", icon: "Heart" },
+  { title: "Nursing Homes", icon: "Users" },
   { title: "Corporate Housing", icon: "Briefcase" },
   { title: "Event Organisers", icon: "Calendar" },
 ] as const;
@@ -90,62 +113,94 @@ export const B2B_PARTNERS = [
 export const B2B_FEATURES = [
   {
     title: "Tiered Wholesale Pricing",
-    description: "Volume-based pricing that rewards loyalty and large-scale procurement.",
+    description:
+      "Volume-based pricing that rewards loyalty and large-scale procurement.",
     icon: "TrendingUp",
   },
   {
-    title: "Recurring Contracts",
-    description: "Set-and-forget supply agreements tailored to your operational calendar.",
+    title: "Recurring Supply Contracts",
+    description:
+      "Set-and-forget supply agreements tailored to your operational calendar.",
     icon: "RefreshCw",
   },
   {
-    title: "Custom Quantities",
-    description: "Flexible order sizes from boutique minimums to enterprise-scale fulfilment.",
+    title: "Custom Quantity Ordering",
+    description:
+      "Flexible order sizes from boutique minimums to enterprise-scale fulfilment.",
     icon: "Package",
   },
   {
-    title: "Seasonal Refresh",
-    description: "Scheduled textile refreshes to maintain impeccable presentation standards.",
+    title: "Seasonal Refresh Options",
+    description:
+      "Scheduled textile refreshes to maintain impeccable presentation standards.",
     icon: "Sparkles",
   },
   {
-    title: "Tender Support",
-    description: "Dedicated support for public and private sector procurement processes.",
+    title: "Tender Bid Support",
+    description:
+      "Dedicated support for public and private sector procurement processes.",
     icon: "FileText",
   },
   {
     title: "Flexible Invoicing",
-    description: "Net-30, net-60, and custom payment terms to match your cash flow.",
+    description:
+      "Net-30, net-60, and custom payment terms to match your cash flow.",
     icon: "CreditCard",
   },
 ] as const;
 
-// Subscription steps
+// Subscription steps (from PDF "How It Works")
 export const SUBSCRIPTION_STEPS = [
-  { step: 1, title: "Select", description: "Choose your textile category and quality tier." },
-  { step: 2, title: "Choose", description: "Pick your preferred refresh frequency and quantity." },
-  { step: 3, title: "Receive", description: "Get pristine, freshly laundered textiles delivered." },
-  { step: 4, title: "Return", description: "Send back used items in our prepaid return bags." },
-  { step: 5, title: "Refresh", description: "We clean, repair, or recycle — and you receive fresh stock." },
+  {
+    step: 1,
+    title: "Select Your Linen Package",
+    description: "Choose your textile category and quality tier.",
+  },
+  {
+    step: 2,
+    title: "Choose Delivery Frequency",
+    description: "Pick your preferred refresh frequency and quantity.",
+  },
+  {
+    step: 3,
+    title: "Receive Seasonal Upgrades",
+    description:
+      "Get pristine, freshly sourced textiles delivered to your door.",
+  },
+  {
+    step: 4,
+    title: "Return Used Linens",
+    description: "Send back used items for recycling in our prepaid return bags.",
+  },
+  {
+    step: 5,
+    title: "Receive Refreshed Replacements",
+    description:
+      "We clean, repair, or recycle — and you receive fresh stock.",
+  },
 ] as const;
 
-// Subscription benefits
+// Subscription benefits (from PDF "Why Subscribe?")
 export const SUBSCRIPTION_BENEFITS = [
   {
-    title: "Cost Predictability",
-    description: "Fixed monthly costs replace unpredictable capital expenditure on textile replacement.",
+    title: "Predictable Budgeting",
+    description:
+      "Fixed monthly costs replace unpredictable capital expenditure on textile replacement.",
   },
   {
-    title: "Always Fresh",
-    description: "Consistent quality without the hassle of sourcing, laundering, or disposing of worn textiles.",
+    title: "No Emergency Shortages",
+    description:
+      "Consistent quality without the hassle of sourcing, laundering, or disposing of worn textiles.",
   },
   {
-    title: "Sustainable by Design",
-    description: "Every subscription cycle extends textile life and diverts waste from landfill.",
+    title: "Sustainable Textile Lifecycle",
+    description:
+      "Every subscription cycle extends textile life and diverts waste from landfill.",
   },
   {
-    title: "Fully Flexible",
-    description: "Scale up, scale down, pause, or cancel — your subscription adapts to your needs.",
+    title: "Always Fresh, Always Professional",
+    description:
+      "Scale up, scale down, pause, or cancel — your subscription adapts to your needs.",
   },
 ] as const;
 
@@ -157,22 +212,34 @@ export const SUSTAINABILITY_METRICS = [
   { value: "100%", label: "Renewable energy in operations" },
 ] as const;
 
-// Footer link columns
+// Social media links (from PDF)
+export const SOCIAL_LINKS = {
+  pinterest: "https://www.pinterest.com/lush_nluxe/",
+  tiktok:
+    "https://www.tiktok.com/@lush.nluxe?_t=ZM-8y8TotCiZoG&_r=1",
+  instagram: "https://www.instagram.com/lush.nluxe/",
+  facebook:
+    "https://www.facebook.com/profile.php?id=61578270008831",
+  linkedin: "https://www.linkedin.com/company/lush-n-luxe/",
+} as const;
+
+// Footer link columns (updated from PDF)
 export const FOOTER_LINKS = [
   {
     title: "About",
     links: [
       { label: "Our Story", href: "/about" },
       { label: "Sustainability", href: "/sustainability" },
-      { label: "Careers", href: "/#" },
+      { label: "Our Brands", href: "/#" },
     ],
   },
   {
     title: "Shop",
     links: [
-      { label: "Bedding", href: "/#" },
+      { label: "Bedroom", href: "/#" },
       { label: "Bathroom", href: "/#" },
       { label: "Kitchenware", href: "/#" },
+      { label: "Decor", href: "/#" },
     ],
   },
   {
@@ -187,8 +254,10 @@ export const FOOTER_LINKS = [
     title: "Support",
     links: [
       { label: "Contact Us", href: "/contact" },
-      { label: "FAQs", href: "/#" },
-      { label: "Shipping & Returns", href: "/#" },
+      { label: "Shipping & Delivery", href: "/#" },
+      { label: "Returns & Refund", href: "/#" },
+      { label: "Privacy Policy", href: "/#" },
+      { label: "Terms & Conditions", href: "/#" },
     ],
   },
 ] as const;

@@ -35,8 +35,7 @@ function ContactHero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-6 text-lg text-primary-foreground/80 leading-relaxed text-pretty"
         >
-          Whether you have a question about our collections, need a B2B quotation,
-          or want to visit our showroom, we&apos;d love to hear from you.
+          We&apos;d love to support your home or business textiles needs.
         </motion.p>
       </div>
     </section>
@@ -49,7 +48,7 @@ const contactDetails = [
   {
     icon: MapPin,
     title: "Location",
-    lines: ["Castlewellan", "Northern Ireland"],
+    lines: ["Castlewellan, Northern Ireland", "Warehouse & Showroom Available"],
   },
   {
     icon: Mail,
@@ -221,8 +220,10 @@ function ContactForm() {
                         Select a subject
                       </option>
                       <option value="general">General Enquiry</option>
-                      <option value="b2b">B2B / Corporate</option>
-                      <option value="subscription">Subscription</option>
+                      <option value="b2b">B2B / Corporate Account</option>
+                      <option value="quotation">Request a Quotation</option>
+                      <option value="subscription">Subscription Programme</option>
+                      <option value="showroom">Showroom Visit</option>
                       <option value="press">Press / Media</option>
                     </select>
                   </div>

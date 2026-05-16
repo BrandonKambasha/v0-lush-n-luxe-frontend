@@ -3,7 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { AnimatedSection, StaggerContainer, staggerItem } from "@/components/animated-section";
+import {
+  AnimatedSection,
+  StaggerContainer,
+  staggerItem,
+} from "@/components/animated-section";
 import { SectionHeading } from "@/components/section-heading";
 import { CollectionCard } from "@/components/collection-card";
 import {
@@ -36,7 +40,7 @@ function Hero() {
           transition={{ duration: 0.6 }}
           className="text-sm font-medium uppercase tracking-[0.3em] text-accent"
         >
-          Sustainable Luxury for Every Home
+          Sustainable Homeware &amp; Textiles Solutions
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -52,8 +56,8 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 text-pretty"
         >
-          Luxury Homeware & Textiles, Crafted for Every Lifestyle — Delivered
-          Sustainably and Affordably.
+          Luxury Homeware &amp; Textiles, Crafted for Every Lifestyle &mdash;
+          Delivered Sustainably and Affordably.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -116,7 +120,13 @@ function FeaturedCollections() {
 
         <StaggerContainer className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {FEATURED_COLLECTIONS.map((col, i) => (
-            <motion.div key={col.title} variants={staggerItem} className={i === 0 ? "sm:col-span-2 lg:col-span-1" : ""}>
+            <motion.div
+              key={col.title}
+              variants={staggerItem}
+              className={
+                i === 0 ? "sm:col-span-2 lg:col-span-1" : ""
+              }
+            >
               <CollectionCard
                 title={col.title}
                 description={col.description}
@@ -150,7 +160,11 @@ function AboutPreview() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection direction="right" delay={0.15} className="lg:w-1/2">
+          <AnimatedSection
+            direction="right"
+            delay={0.15}
+            className="lg:w-1/2"
+          >
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">
               About Lush n&apos; Luxe
             </p>
@@ -159,11 +173,20 @@ function AboutPreview() {
             </h2>
             <div className="mt-3 h-0.5 w-16 bg-accent" />
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              We believe luxury should never come at the expense of the planet.
-              Every thread we weave, every fibre we source, reflects our
-              commitment to responsible craftsmanship and timeless elegance.
+              At Lush n&apos; Luxe, we believe luxury should feel good &mdash;
+              and do good. We supply sustainable, high-quality home textiles
+              designed for refined living spaces, hospitality environments, and
+              care facilities that demand durability without compromising
+              elegance.
             </p>
-            <ul className="mt-8 flex flex-col gap-3">
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              From curated seasonal bedding to commercial-grade towel solutions,
+              we combine comfort, performance, and environmental responsibility.
+            </p>
+            <p className="mt-6 text-sm font-semibold uppercase tracking-wider text-foreground">
+              Our Promise
+            </p>
+            <ul className="mt-4 flex flex-col gap-3">
               {BRAND_PROMISES.map((promise) => (
                 <li
                   key={promise}
@@ -190,7 +213,7 @@ function AboutPreview() {
   );
 }
 
-/* ────────────────────── Carousel ────────────────────── */
+/* ────────────────────── Featured Carousel ────────────────────── */
 
 function FeaturedCarousel() {
   return (
@@ -204,9 +227,16 @@ function FeaturedCarousel() {
         </AnimatedSection>
 
         <div className="mt-16 -mx-6 px-6 overflow-x-auto hide-scrollbar">
-          <div className="flex gap-6" style={{ minWidth: "max-content" }}>
+          <div
+            className="flex gap-6"
+            style={{ minWidth: "max-content" }}
+          >
             {CAROUSEL_COLLECTIONS.map((item, i) => (
-              <AnimatedSection key={item.title} delay={i * 0.1} className="w-80 flex-shrink-0">
+              <AnimatedSection
+                key={item.title}
+                delay={i * 0.1}
+                className="w-80 flex-shrink-0"
+              >
                 <div className="group overflow-hidden rounded-lg bg-card shadow-sm transition-shadow hover:shadow-md">
                   <div className="overflow-hidden">
                     <Image

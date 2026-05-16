@@ -74,8 +74,9 @@ function B2BHero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-6 text-lg text-primary-foreground/80 leading-relaxed text-pretty"
         >
-          Premium textile procurement, tailored contracts, and sustainable
-          supply for hospitality, healthcare, and corporate environments.
+          We partner with hotels, boutique stays, Airbnb hosts, hospitals,
+          nursing homes, corporate housing, and event organisers to deliver
+          premium textile solutions at scale.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
